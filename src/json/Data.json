@@ -2,14 +2,14 @@
     {
         "nom": "The Legend of Zelda: Breath of the Wild",
         "prix": 59.99,
-        "genre": "Action-aventure",
+        "genre": "Action-adventure",
         "src": "https://example.com/zelda_breath_of_the_wild.jpg",
         "qualite": 10
     },
     {
         "nom": "Red Dead Redemption 2",
         "prix": 49.99,
-        "genre": "Action-aventure",
+        "genre": "Action-adventure",
         "src": "https://example.com/red_dead_redemption_2.jpg",
         "qualite": 8
     },
@@ -42,16 +42,16 @@
         "qualite": 11
     },
     {
-        "nom": "Call of Duty: Modern Warfare",
+        "nom": "Harry Potter Howard Legacy",
         "prix": 59.99,
-        "genre": "FPS",
+        "genre": "RPG",
         "src": "https://example.com/cod_modern_warfare.jpg",
         "qualite": 6
     },
     {
-        "nom": "FC 24",
+        "nom": "Tekken 8",
         "prix": 59.99,
-        "genre": "Sport",
+        "genre": "Fighting",
         "src": "https://example.com/fifa_22.jpg",
         "qualite": 13
     },

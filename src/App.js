@@ -1,10 +1,23 @@
 import React, { useState } from 'react'
 import Firstcomp from './Compoments/Firstcomp/Firstcomp'
 import Data from "./json/Data.json"
+import "./App.css"
 
-import Zelda from "./img/zelda.avif"
 import Logo from "./img/logo.jpg"
 import Avatar from './img/avatar.jpg'
+
+// import Zelda from "./img/GamePics/zelda.jpg "
+import RDR from "./img/GamePics/RDR.jpg"
+import Cyber from "./img/GamePics/cyber.jpg"
+import Mario from "./img/GamePics/Odyssey.jpg"
+import Witcher from "./img/GamePics/Witcher.jpg"
+import Fortnite from "./img/GamePics/Fortnite.jpg"
+import Harry from "./img/GamePics/Harry.jpg"
+import Tekken from "./img/GamePics/Taken.jpg"
+import Mincraft from "./img/GamePics/Mincraft.jpg"
+import Zelda from "./img/GamePics/Zelda.jpg"
+
+import Banner from "./img/spaceGame.png"
 
 
 
@@ -20,9 +33,8 @@ export default function App() {
   }
 
 
-
   return (
-    <div className='bg-blue-500 h-full w-fit flex items-center flex-col'>
+    <div className='bg-blue-200 h-full w-fit flex items-center flex-col'>
                 <div className="navbar bg-white opacity-60">
             <div className="flex-1">
               <a className="btn btn-ghost"><img onClick={() => ajout()} className='h-[100%] w-[100%]' src={Logo} alt="" /> </a>
@@ -64,14 +76,14 @@ export default function App() {
               </div>
             </div>
           </div>
-    <div className=' w-[80%] h-[40%] bg-blue-500 flex justify-center items-center'>
-      <h1>SPACE-GAME</h1>
+    <div className='banner w-[80%] h-[320px]  flex justify-center items-center'>
+      <img src={Banner}></img>
     </div>
 
 
 
     <div className=' w-[80%] bg-red-500 flex justify-center items-center'>
-      <Firstcomp Data={Data} Zelda={Zelda}></Firstcomp>
+      <Firstcomp Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft}></Firstcomp>
     </div>
     </div>
   )
