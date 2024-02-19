@@ -64,6 +64,12 @@ export default function App() {
               </div>
             </div>
           </div>
+    <div className=' w-[80%] h-[40%] bg-blue-500 flex justify-center items-center'>
+      <h1>SPACE-GAME</h1>
+    </div>
+
+
+
     <div className=' w-[80%] bg-red-500 flex justify-center items-center'>
       <Firstcomp Data={Data} Zelda={Zelda}></Firstcomp>
     </div>
