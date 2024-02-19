@@ -6,6 +6,9 @@ export default function Firstcomp(props) {
     let pics = [props.Zelda, props.RDR, props.Cyber, props.Mario, props.Witcher, props.Fortnite, props.Harry, props.Tekken, props.Mincraft]
     let p = 0
     
+
+     
+
     return (
         <div className="h-[90%] w-[90%] flex justify-center items-center flex-wrap gap-10">
             
@@ -19,9 +22,9 @@ export default function Firstcomp(props) {
                         <div className="card-body items-center text-center">
                             <h2 className="card-title">{element.nom}</h2>
                             <p>Genre : {element.genre}</p>
-                            <p>Quantité : {element.qualite}</p>
+                            <p>Quantité : {element.quantite} {element.quantite == 0 && props.setEmpty(true)}</p>
                             <div className="card-actions">
-                            <button className="btn btn-primary leading-4">Buy Now <br /> ${element.prix}</button>
+                            <button disabled={props.empty} onClick={() => (props.ajout(), (props.moins(element), (props.setMonny(props.monny+element.prix))))} className="btn btn-primary leading-4">Buy Now <br /> ${element.prix}</button>
                             </div>
                         </div>
                     </div>

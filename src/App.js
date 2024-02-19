@@ -19,25 +19,38 @@ import Zelda from "./img/GamePics/Zelda.jpg"
 
 import Banner from "./img/spaceGame.png"
 
-
+import Navbar from './Compoments/Navbar/Navbar'
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function App() {
 
+  const [ showNav, setshowNav ] = useState(false)
 
 
   const [monny, setMonny] = useState(0)
   const [article, setArticle] = useState(0)
 
+  const [game, setGame] =useState(Data)
+  console.log(game[0].quantite);
+
   let ajout = () => {
     setArticle(article+1)
   }
 
+  let moins = (stock) => {
+    stock.quantite--
+  }
+
+  const [empty, setEmpty] = useState(false)
+
+ 
 
   return (
     <div className='bg-blue-200 h-full w-fit flex items-center flex-col'>
+
                 <div className="navbar bg-white opacity-60">
             <div className="flex-1">
-              <a className="btn btn-ghost"><img onClick={() => ajout()} className='h-[100%] w-[100%]' src={Logo} alt="" /> </a>
+              <img onClick={() => setshowNav(!showNav)} className='h-16 w-18' src={Logo} alt="" style={{paddingLeft: showNav && '195px', transition : "all 1s"}} /> 
             </div>
             <div className="flex-none">
               <div className="dropdown dropdown-end">
@@ -76,14 +89,15 @@ export default function App() {
               </div>
             </div>
           </div>
-    <div className='banner w-[80%] h-[320px]  flex justify-center items-center'>
-      <img src={Banner}></img>
-    </div>
+      {/* <div className='flex justify-start h-10 w-[80%] items-center'>
 
+      <RxHamburgerMenu className='m-5' />
+      </div> */}
 
+      <Navbar game={game} setshowNav={setshowNav} monny={monny} show={showNav}/>
 
-    <div className=' w-[80%] bg-red-500 flex justify-center items-center'>
-      <Firstcomp Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft}></Firstcomp>
+    <div className=' w-[80%]  flex justify-center items-center'>
+      <Firstcomp empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft}></Firstcomp>
     </div>
     </div>
   )

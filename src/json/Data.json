@@ -4,62 +4,62 @@
         "prix": 59.99,
         "genre": "Action-adventure",
         "src": "https://example.com/zelda_breath_of_the_wild.jpg",
-        "qualite": 10
+        "quantite": 10
     },
     {
         "nom": "Red Dead Redemption 2",
         "prix": 49.99,
         "genre": "Action-adventure",
         "src": "https://example.com/red_dead_redemption_2.jpg",
-        "qualite": 8
+        "quantite": 8
     },
     {
         "nom": "Cyberpunk 2077",
         "prix": 39.99,
         "genre": "RPG",
         "src": "https://example.com/cyberpunk_2077.jpg",
-        "qualite": 12
+        "quantite": 12
     },
     {
         "nom": "Super Mario Odyssey",
         "prix": 49.99,
         "genre": "Plateforme",
         "src": "https://example.com/super_mario_odyssey.jpg",
-        "qualite": 7
+        "quantite": 7
     },
     {
         "nom": "The Witcher 3: Wild Hunt",
         "prix": 29.99,
         "genre": "RPG",
         "src": "https://example.com/the_witcher_3.jpg",
-        "qualite": 9
+        "quantite": 9
     },
     {
         "nom": "Fortnite",
         "prix": 0,
         "genre": "Battle Royale",
         "src": "https://example.com/fortnite.jpg",
-        "qualite": 11
+        "quantite": 11
     },
     {
         "nom": "Harry Potter Howard Legacy",
         "prix": 59.99,
         "genre": "RPG",
         "src": "https://example.com/cod_modern_warfare.jpg",
-        "qualite": 6
+        "quantite": 6
     },
     {
         "nom": "Tekken 8",
         "prix": 59.99,
         "genre": "Fighting",
         "src": "https://example.com/fifa_22.jpg",
-        "qualite": 13
+        "quantite": 13
     },
     {
         "nom": "Minecraft",
         "prix": 19.99,
         "genre": "Sandbox",
         "src": "https://example.com/minecraft.jpg",
-        "qualite": 10
+        "quantite": 10
     }
 ]
