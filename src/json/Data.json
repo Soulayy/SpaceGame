@@ -49,7 +49,7 @@
         "qualite": 6
     },
     {
-        "nom": "FIFA 22",
+        "nom": "FC 24",
         "prix": 59.99,
         "genre": "Sport",
         "src": "https://example.com/fifa_22.jpg",
@@ -61,12 +61,5 @@
         "genre": "Sandbox",
         "src": "https://example.com/minecraft.jpg",
         "qualite": 10
-    },
-    {
-        "nom": "Overwatch",
-        "prix": 39.99,
-        "genre": "FPS",
-        "src": "https://example.com/overwatch.jpg",
-        "qualite": 8
     }
 ]

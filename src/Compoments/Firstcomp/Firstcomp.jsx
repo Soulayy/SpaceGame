@@ -18,7 +18,7 @@ export default function Firstcomp(props) {
                             <p>Genre : {element.genre}</p>
                             <p>Quantité : {element.qualite}</p>
                             <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary leading-4">Buy Now <br /> ${element.prix}</button>
                             </div>
                         </div>
                     </div>
