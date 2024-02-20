@@ -1,5 +1,6 @@
 import React, { useState, useRef  } from 'react'
 import Firstcomp from './Compoments/Firstcomp/Firstcomp'
+import Secondcomp from './Compoments/Secondcomp/Secondcomp'
 import Data from "./json/Data.json"
 import "./App.css"
 
@@ -23,7 +24,6 @@ import GrandV from "./img/GamePics/12.png"
 import Banner from "./img/spaceGame.png"
 
 import Navbar from './Compoments/Navbar/Navbar'
-import Secondcomp from './Compoments/Secondcomp/Secondcomp'
 
 export default function App() {
 
@@ -32,11 +32,11 @@ export default function App() {
 
   const [monny, setMonny] = useState(0)
   const [article, setArticle] = useState(0)
-  console.log(monny);
   const [game, setGame] =useState(Data)
 
   let ajout = () => {
     setArticle(article+1)
+    
   }
 
   let moins = (stock) => {
@@ -50,6 +50,8 @@ export default function App() {
   }
  
   const rules = useRef()
+
+  
 
   return (
     <div className='bg-blue-200 h-full w-fit flex items-center flex-col'>
@@ -71,7 +73,7 @@ export default function App() {
                     <span className="font-bold text-lg">{article} Items</span>
                     <span className="text-info">Subtotal: ${monny}</span>
                     <div className="card-actions">
-                      <button className="btn btn-primary btn-block">View cart</button>
+                      <button onClick={rulesshow} empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV} className="btn btn-primary btn-block">View Bag</button>
                     </div>
                   </div>
                 </div>
@@ -99,21 +101,14 @@ export default function App() {
 
       <RxHamburgerMenu className='m-5' />
       </div> */}
-      <div className='w-[90%] h-[100px] top-[88%] flex justify-end items-center'>
-        <button onClick={rulesshow} className='text-white font-semibold text-xl tracking-widest w-[170px] h-[50px] rounded-xl me-5 border-[2px]'>RULES</button>
-      </div>
-      <div ref={rules} className='w-[500px] rounded-xl h-[500px] flex flex-col justify-center items-center hidden bg-white absolute z-20 gap-10'>
-        <h1 className='text-[#58546B] text-3xl font-bold pe-[70%]'>RULES</h1>
-        <img className='h-[70%]' src={Zelda} alt="" />
+      <div ref={rules} className='w-[500px] rounded-xl h-[500px] flex flex-col justify-center items-center hidden bg-blue-400 absolute z-20 gap-10'>
+        <Secondcomp empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Secondcomp>
       </div>
 
       <Navbar game={game} setshowNav={setshowNav} monny={monny} setMonny={setMonny} show={showNav}/>
 
     <div className=' w-[80%]  flex justify-center items-center'>
       <Firstcomp empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Firstcomp>
-    </div>
-    <div className=' w-[80%] bg-blue-600 flex justify-center items-center'>
-      <Secondcomp monny={monny}></Secondcomp>
     </div>
     </div>
   )
