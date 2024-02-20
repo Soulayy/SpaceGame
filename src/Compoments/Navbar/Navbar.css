@@ -1,7 +1,7 @@
 
 .sidenav {
     width: 195px;
-    background: #E5F1FF;
+    background: #F5F5F5;
     position: absolute;
     height: 1836px;
     padding: 0 30px;
@@ -33,7 +33,11 @@
   
   ul li a:hover, 
   ul li a.active {
-    background: #BFDBFE;
+    background: #FC3060;
+    box-shadow: 0px 15px 20px rgba(0, 81, 255, 0.4);
+    color: #ffffff;
+    transform: translateY(-7px);
+    transition: 0.5s;
   } 
 
   header svg {

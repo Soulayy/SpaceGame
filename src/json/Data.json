@@ -61,5 +61,26 @@
         "genre": "Sandbox",
         "src": "https://example.com/minecraft.jpg",
         "quantite": 10
+    },
+    {
+        "nom": "Final Fantasy VII Remake",
+        "prix": 59.99,
+        "genre": "RPG",
+        "src": "https://example.com/final_fantasy_vii_remake.jpg",
+        "qualite": 14
+    },
+    {
+        "nom": "Assassin's Creed Valhalla",
+        "prix": 49.99,
+        "genre": "Action-aventure",
+        "src": "https://example.com/assassins_creed_valhalla.jpg",
+        "qualite": 10
+    },
+    {
+        "nom": "Grand Theft Auto VI",
+        "prix": 89.99,
+        "genre": "Action-aventure",
+        "src": "https://example.com/gta5.jpg",
+        "qualite": 10
     }
 ]

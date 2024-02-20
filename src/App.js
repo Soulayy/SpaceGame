@@ -7,20 +7,23 @@ import Logo from "./img/logo.jpg"
 import Avatar from './img/avatar.jpg'
 
 // import Zelda from "./img/GamePics/zelda.jpg "
-import RDR from "./img/GamePics/RDR.jpg"
-import Cyber from "./img/GamePics/cyber.jpg"
-import Mario from "./img/GamePics/Odyssey.jpg"
-import Witcher from "./img/GamePics/Witcher.jpg"
-import Fortnite from "./img/GamePics/Fortnite.jpg"
-import Harry from "./img/GamePics/Harry.jpg"
-import Tekken from "./img/GamePics/Taken.jpg"
-import Mincraft from "./img/GamePics/Mincraft.jpg"
-import Zelda from "./img/GamePics/Zelda.jpg"
+import RDR from "./img/GamePics/2.png"
+import Cyber from "./img/GamePics/3.png"
+import Mario from "./img/GamePics/4.png"
+import Witcher from "./img/GamePics/5.png"
+import Fortnite from "./img/GamePics/6.png"
+import Harry from "./img/GamePics/7.png"
+import Tekken from "./img/GamePics/8.png"
+import Mincraft from "./img/GamePics/9.png"
+import Zelda from "./img/GamePics/1.png"
+import FinalF from "./img/GamePics/10.png"
+import Assasin from "./img/GamePics/11.png"
+import GrandV from "./img/GamePics/12.png"
 
 import Banner from "./img/spaceGame.png"
 
 import Navbar from './Compoments/Navbar/Navbar'
-import { RxHamburgerMenu } from "react-icons/rx";
+import Secondcomp from './Compoments/Secondcomp/Secondcomp'
 
 export default function App() {
 
@@ -29,9 +32,8 @@ export default function App() {
 
   const [monny, setMonny] = useState(0)
   const [article, setArticle] = useState(0)
-
+  console.log(monny);
   const [game, setGame] =useState(Data)
-  console.log(game[0].quantite);
 
   let ajout = () => {
     setArticle(article+1)
@@ -48,7 +50,7 @@ export default function App() {
   return (
     <div className='bg-blue-200 h-full w-fit flex items-center flex-col'>
 
-                <div className="navbar bg-white opacity-60">
+                <div className="navbar bg-[#F5F5F5] ">
             <div className="flex-1">
               <img onClick={() => setshowNav(!showNav)} className='h-16 w-18' src={Logo} alt="" style={{paddingLeft: showNav && '195px', transition : "all 1s"}} /> 
             </div>
@@ -94,10 +96,13 @@ export default function App() {
       <RxHamburgerMenu className='m-5' />
       </div> */}
 
-      <Navbar game={game} setshowNav={setshowNav} monny={monny} show={showNav}/>
+      <Navbar game={game} setshowNav={setshowNav} monny={monny} setMonny={setMonny} show={showNav}/>
 
     <div className=' w-[80%]  flex justify-center items-center'>
-      <Firstcomp empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft}></Firstcomp>
+      <Firstcomp empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Firstcomp>
+    </div>
+    <div className=' w-[80%] bg-blue-600 flex justify-center items-center'>
+      <Secondcomp monny={monny}></Secondcomp>
     </div>
     </div>
   )

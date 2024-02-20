@@ -19,6 +19,7 @@ const Navbar = ({show})  => {
                 <li>
                     <a href="/">Contact Us</a>
                 </li>
+                
             </ul>
 
         </div>
