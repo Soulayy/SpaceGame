@@ -3,7 +3,7 @@
         "nom": "The Legend of Zelda: Breath of the Wild",
         "prix": 59.99,
         "genre": "Action-adventure",
-        "src": "https://example.com/zelda_breath_of_the_wild.jpg",
+        "src": "./../img/GamePics/1.png",
         "quantite": 10
     },
     {
