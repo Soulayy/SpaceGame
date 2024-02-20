@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef  } from 'react'
 import Firstcomp from './Compoments/Firstcomp/Firstcomp'
 import Data from "./json/Data.json"
 import "./App.css"
@@ -45,11 +45,15 @@ export default function App() {
 
   const [empty, setEmpty] = useState(false)
 
+  function rulesshow() {
+    rules.current.classList.toggle("hidden")
+  }
  
+  const rules = useRef()
 
   return (
     <div className='bg-blue-200 h-full w-fit flex items-center flex-col'>
-
+      
                 <div className="navbar bg-[#F5F5F5] ">
             <div className="flex-1">
               <img onClick={() => setshowNav(!showNav)} className='h-16 w-18' src={Logo} alt="" style={{paddingLeft: showNav && '195px', transition : "all 1s"}} /> 
@@ -95,6 +99,13 @@ export default function App() {
 
       <RxHamburgerMenu className='m-5' />
       </div> */}
+      <div className='w-[90%] h-[100px] top-[88%] flex justify-end items-center'>
+        <button onClick={rulesshow} className='text-white font-semibold text-xl tracking-widest w-[170px] h-[50px] rounded-xl me-5 border-[2px]'>RULES</button>
+      </div>
+      <div ref={rules} className='w-[500px] rounded-xl h-[500px] flex flex-col justify-center items-center hidden bg-white absolute z-20 gap-10'>
+        <h1 className='text-[#58546B] text-3xl font-bold pe-[70%]'>RULES</h1>
+        <img className='h-[70%]' src={Zelda} alt="" />
+      </div>
 
       <Navbar game={game} setshowNav={setshowNav} monny={monny} setMonny={setMonny} show={showNav}/>
 
