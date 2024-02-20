@@ -1,1 +1,0 @@
-import moi from "./../img/GamePics/1.png"
