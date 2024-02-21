@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/SpaceGame/static/css/main.b46370d5.css",
+    "main.js": "/SpaceGame/static/js/main.0d899503.js",
+    "static/media/4.png": "/SpaceGame/static/media/4.66a41c4424dfeefff472.png",
+    "static/media/1.png": "/SpaceGame/static/media/1.7e626aeaa895f1f74694.png",
+    "static/media/11.png": "/SpaceGame/static/media/11.7526806343220b7eae91.png",
+    "static/media/6.png": "/SpaceGame/static/media/6.9fd6e16b3e1834fe7397.png",
+    "static/media/10.png": "/SpaceGame/static/media/10.d474c441b92b58e0f960.png",
+    "static/media/3.png": "/SpaceGame/static/media/3.83aaf95e12c53b924bc3.png",
+    "static/media/5.png": "/SpaceGame/static/media/5.c5278c22eeb2ebc2130a.png",
+    "static/media/9.png": "/SpaceGame/static/media/9.df00e27b8a3f9e30d3d5.png",
+    "static/media/12.png": "/SpaceGame/static/media/12.2eee3b4bdedeb1453232.png",
+    "static/media/8.png": "/SpaceGame/static/media/8.2c2bf50a62a4b109b38c.png",
+    "static/media/2.png": "/SpaceGame/static/media/2.8e80dc767bf6f0dde154.png",
+    "static/media/7.png": "/SpaceGame/static/media/7.1bceddc28634a745fb51.png",
+    "static/media/bk.jpg": "/SpaceGame/static/media/bk.ad79ab935c8cc0cb2a52.jpg",
+    "static/media/logo.png": "/SpaceGame/static/media/logo.a7a9201f16ae43559f43.png",
+    "static/media/slog.png": "/SpaceGame/static/media/slog.3f9aff223569f0afdc93.png",
+    "static/media/avatar.jpg": "/SpaceGame/static/media/avatar.4c3eac91a73d3b897e47.jpg",
+    "index.html": "/SpaceGame/index.html",
+    "main.b46370d5.css.map": "/SpaceGame/static/css/main.b46370d5.css.map",
+    "main.0d899503.js.map": "/SpaceGame/static/js/main.0d899503.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b46370d5.css",
+    "static/js/main.0d899503.js"
+  ]
+}
