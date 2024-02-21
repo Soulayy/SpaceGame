@@ -21,7 +21,6 @@ import FinalF from "./img/GamePics/10.png"
 import Assasin from "./img/GamePics/11.png"
 import GrandV from "./img/GamePics/12.png"
 
-import Banner from "./img/spaceGame.png"
 
 import Navbar from './Compoments/Navbar/Navbar'
 
@@ -34,15 +33,16 @@ export default function App() {
   const [article, setArticle] = useState(0)
   const [game, setGame] =useState(Data)
 
+
   const [choix, setChoix] = useState("")
 
-  const [panier, setPanier] = useState("")
+  const [panier, setPanier] = useState([])
 
+  console.log(panier);
 
 
   let ajout = () => {
-    setArticle(article+1)
-    
+    setArticle(article+1) 
   }
 
   let moins = (stock) => {
@@ -79,7 +79,7 @@ export default function App() {
                     <span className="font-bold text-lg">{article} Items</span>
                     <span className="text-info">Subtotal: ${monny}</span>
                     <div className="card-actions">
-                      <button onClick={rulesshow} article={article} empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV} className="btn btn-primary btn-block">View Bag</button>
+                      <button onClick={rulesshow} setPanier={setPanier} panier={panier} article={article} empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV} className="btn btn-primary btn-block">View Bag</button>
                     </div>
                   </div>
                 </div>
@@ -107,14 +107,14 @@ export default function App() {
 
       <RxHamburgerMenu className='m-5' />
       </div> */}
-      <div ref={rules} className='w-[500px] rounded-xl h-[500px]  flex-col justify-center items-center hidden bg-blue-400 absolute z-20 gap-10'>
-        <Secondcomp article={article} setChoix={setChoix} choix={choix} empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Secondcomp>
+      <div ref={rules} className='w-[500px] rounded-xl h-[500px]  flex-col justify-center items-center flex hidden bg-blue-400 absolute z-20 gap-10'>
+        <Secondcomp panier={panier} setPanier={setPanier} article={article} setChoix={setChoix} choix={choix} empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Secondcomp>
       </div>
 
       <Navbar game={game} setshowNav={setshowNav} monny={monny} setMonny={setMonny} show={showNav}/>
 
     <div className=' w-[80%]  flex justify-center items-center'>
-      <Firstcomp empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Firstcomp>
+      <Firstcomp panier={panier} setPanier={setPanier} empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Firstcomp>
     </div>
     </div>
   )
