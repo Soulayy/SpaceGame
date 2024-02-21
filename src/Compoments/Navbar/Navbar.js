@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import Logo from "./../../img/logo.jpg"
+import Logos from "./../../img/logo.png"
 
 
 const Navbar = ({show})  => {
@@ -7,7 +7,7 @@ const Navbar = ({show})  => {
 
     return (
         <div className={show ? 'sidenav active' : 'sidenav' }>
-            <img  src={Logo}></img>
+            <img  src={Logos}></img>
 
             <ul className="text-center">
                 <li>
