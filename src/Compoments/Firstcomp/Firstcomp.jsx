@@ -27,7 +27,7 @@ export default function Firstcomp(props) {
                     return(
                     <div key={key} className="card w-[300px] h-[500px] bg-base-100 shadow-xl">
                         <figure className="px-10 pt-10">
-                            <img  src={pics[p++]} className="rounded-xl h-[100%] w-[70%]" />
+                            <img  src={pics[p++]} className="rounded-xl h-[100%] w-[70%] opacity-80" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title">{element.nom}</h2>
