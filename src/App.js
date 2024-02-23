@@ -115,6 +115,11 @@ export default function App() {
 
       <Navbar Logo={Logo} game={game} setshowNav={setshowNav} monny={monny} setMonny={setMonny} show={showNav}/>
 
+<br />
+<br />
+<br />
+      <div id="earth"></div>
+
     <div className=' w-[80%]  flex justify-center items-center'>
       <Firstcomp panier={panier} setPanier={setPanier} empty={empty} setEmpty={setEmpty} moins={moins} game={game} setGame={setGame} monny={monny} setMonny={setMonny} ajout={ajout} Data={Data} Zelda={Zelda} RDR={RDR} Cyber={Cyber} Mario={Mario} Witcher={Witcher} Fortnite={Fortnite} Harry={Harry} Tekken={Tekken} Mincraft={Mincraft} FinalF={FinalF} Assasin={Assasin} GrandV={GrandV}></Firstcomp>
     </div>

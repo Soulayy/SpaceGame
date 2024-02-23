@@ -28,3 +28,27 @@ button:hover {
 button:active {
   transform: translateY(-1px);
 }
+#earth {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: transparent url(./img/spaceGame.png );
+  background-size: cover;
+  box-shadow: inset 0px -20px 50px 10px rgb(0, 0, 0),
+        0px 0px 30px 6px orangered;
+  transform-style: preserve-3d;
+  transform: rotate(20deg);
+  animation: rotate 50s linear infinite;
+  background-color: rgb(255, 255, 255);
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 530px 0;
+  }
+}
