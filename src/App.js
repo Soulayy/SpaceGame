@@ -129,7 +129,7 @@ export default function App() {
   <aside>
     <img className='h-44 w-44' src={Slog} alt="" />
     <p className="font-bold">
-      ACME Industries Ltd. <br/>Providing reliable tech since 1992
+      ACME Industries Soulayamed. <br/>Providing reliable tech since 1992
     </p> 
     <p>Copyright © 2024 - All right reserved</p>
   </aside> 
