@@ -10,12 +10,10 @@ export default function Firstcomp(props) {
     function add (element) {
         
         if (element.quantite > 0) {
-
-            props.setPanier([...props.panier, element.nom,  element.prix])
-            
-        } else {
-
-        }
+            props.setPanier([...props.panier])
+        } 
+    
+        
 
     }
 
